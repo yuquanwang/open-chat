@@ -179,7 +179,7 @@ hmac-sha256 = { version = "1.1.7", features = ["traits010"] }
 ic-agent = "0.33.0"
 ic-cdk = { git = "https://github.com/hpeebles/cdk-rs", rev = "2e39ea5a8fb5ec7e09eb0fc20cfbc536d3ee5398" }
 ic-cdk-macros = "0.8.4"
-ic-cdk-timers = "0.6.0"
+ic-cdk-timers = "0.11.0"
 ic-certification = "2.3.0"
 ic-ledger-types = "0.9.0"
 ic-stable-structures = "0.6.2"

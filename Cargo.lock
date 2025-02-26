@@ -898,9 +898,9 @@ dependencies = [
 
 [[package]]
 name = "candid"
-version = "0.10.3"
+version = "0.10.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "182543fbc03b4ad0bfc384e6b68346e0b0aad0b11d075b71b4fcaa5d07f8862c"
+checksum = "a253bab4a9be502c82332b60cbeee6202ad0692834efeec95fae9f29db33d692"
 dependencies = [
  "anyhow",
  "binread",
@@ -921,9 +921,9 @@ dependencies = [
 
 [[package]]
 name = "candid_derive"
-version = "0.6.5"
+version = "0.6.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "970c220da8aa2fa6f7ef5dbbf3ea5b620a59eb3ac107cfb95ae8c6eebdfb7a08"
+checksum = "3de398570c386726e7a59d9887b68763c481477f9a043fb998a2e09d428df1a9"
 dependencies = [
  "lazy_static",
  "proc-macro2",
@@ -1055,7 +1055,7 @@ name = "canister_timer_jobs"
 version = "0.1.0"
 dependencies = [
  "canister_time",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "serde",
 ]
 
@@ -1296,7 +1296,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-ledger-types",
  "ic-stable-structures",
  "icrc-ledger-types",
@@ -1530,7 +1530,7 @@ dependencies = [
  "human_readable",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-ledger-types",
  "ic-stable-structures",
  "icp_ledger_canister_c2c_client",
@@ -1557,7 +1557,7 @@ dependencies = [
  "cycles_dispenser_canister",
  "cycles_dispenser_canister_c2c_client",
  "ic-cdk 0.12.1",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "tracing",
  "types",
 ]
@@ -2024,7 +2024,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "icrc-ledger-types",
  "icrc_ledger_canister_c2c_client",
@@ -2093,7 +2093,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "icrc-ledger-types",
  "rand",
@@ -2137,7 +2137,7 @@ dependencies = [
  "event_store_canister",
  "event_store_producer",
  "ic-cdk 0.12.0",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.6.0",
  "ic_principal",
  "rand",
  "serde",
@@ -2206,7 +2206,7 @@ dependencies = [
  "canister_client",
  "futures",
  "ic-cdk 0.12.1",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "serde",
  "serde_bytes",
  "tracing",
@@ -2500,7 +2500,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-ledger-types",
  "ic-stable-structures",
  "icp_ledger_canister_c2c_client",
@@ -2614,7 +2614,7 @@ dependencies = [
  "human_readable",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "local_group_index_canister",
  "local_group_index_canister_c2c_client",
@@ -2660,7 +2660,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-ledger-types",
  "ic-stable-structures",
  "icrc-ledger-types",
@@ -3038,6 +3038,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "ic-cdk"
+version = "0.17.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "122efbcb0af5280d408a75a57b7dc6e9d92893bf6ed9cc98fe4dcff51f18b67c"
+dependencies = [
+ "candid",
+ "ic-cdk-macros 0.17.1",
+ "ic0 0.23.0",
+ "serde",
+ "serde_bytes",
+]
+
+[[package]]
 name = "ic-cdk-macros"
 version = "0.8.4"
 source = "git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f#1833cb37ecfd6154cc9cc55b5de76329114e8c5f"
@@ -3064,6 +3077,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "ic-cdk-macros"
+version = "0.17.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c792bf0d1621c893ccf2bcdeac4ee70121103a03030a1827031a6b3c60488944"
+dependencies = [
+ "candid",
+ "proc-macro2",
+ "quote",
+ "serde",
+ "serde_tokenstream 0.2.0",
+ "syn 2.0.48",
+]
+
+[[package]]
 name = "ic-cdk-timers"
 version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3072,6 +3099,20 @@ dependencies = [
  "futures",
  "ic-cdk 0.12.0",
  "ic0 0.21.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde",
+ "serde_bytes",
+ "slotmap",
+]
+
+[[package]]
+name = "ic-cdk-timers"
+version = "0.11.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fb8fd812a9e26f6aa00594546f8fbf4d4853f39c3ba794c8ff11ecf86fd3c9e4"
+dependencies = [
+ "futures",
+ "ic-cdk 0.17.1",
+ "ic0 0.23.0",
  "serde",
  "serde_bytes",
  "slotmap",
@@ -3189,6 +3230,12 @@ version = "0.21.1"
 source = "git+https://github.com/hpeebles/cdk-rs?rev=2e39ea5a8fb5ec7e09eb0fc20cfbc536d3ee5398#2e39ea5a8fb5ec7e09eb0fc20cfbc536d3ee5398"
 
 [[package]]
+name = "ic0"
+version = "0.23.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8de254dd67bbd58073e23dc1c8553ba12fa1dc610a19de94ad2bbcd0460c067f"
+
+[[package]]
 name = "ic_principal"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3263,7 +3310,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-ledger-types",
  "ic-stable-structures",
  "icp_dispenser_bot",
@@ -3414,7 +3461,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-certification",
  "ic-stable-structures",
  "identity_canister",
@@ -3817,7 +3864,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-ledger-types",
  "ic-stable-structures",
  "ledger_utils",
@@ -3885,7 +3932,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-ledger-types",
  "ic-stable-structures",
  "icrc-ledger-types",
@@ -3965,7 +4012,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "icdex_canister",
  "icdex_canister_c2c_client",
@@ -4135,7 +4182,7 @@ dependencies = [
  "human_readable",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-ledger-types",
  "ic-stable-structures",
  "ic-transport-types",
@@ -4310,7 +4357,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "msgpack",
  "notifications_canister",
@@ -4373,7 +4420,7 @@ dependencies = [
  "human_readable",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "msgpack",
  "notifications_canister",
@@ -4579,7 +4626,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "online_users_canister",
  "rand",
@@ -5064,7 +5111,7 @@ dependencies = [
  "human_readable",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "icrc-ledger-types",
  "icrc_ledger_canister_c2c_client",
@@ -5289,7 +5336,7 @@ dependencies = [
  "human_readable",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "icrc-ledger-types",
  "icrc_ledger_canister",
@@ -5632,7 +5679,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-ledger-types",
  "ic-stable-structures",
  "icrc-ledger-types",
@@ -6099,7 +6146,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "msgpack",
  "rand",
@@ -6397,7 +6444,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "num-traits",
  "rand",
@@ -6474,7 +6521,7 @@ dependencies = [
  "human_readable",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "msgpack",
  "rand",
@@ -6985,7 +7032,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-stable-structures",
  "icrc-ledger-types",
  "icrc_ledger_canister",
@@ -7186,7 +7233,7 @@ dependencies = [
  "http_request",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-ledger-types",
  "ic-stable-structures",
  "icpswap_client",
@@ -7286,7 +7333,7 @@ dependencies = [
  "human_readable",
  "ic-cdk 0.12.1",
  "ic-cdk-macros 0.8.4 (git+https://github.com/hpeebles/cdk-rs?rev=1833cb37ecfd6154cc9cc55b5de76329114e8c5f)",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "ic-ledger-types",
  "ic-stable-structures",
  "icrc-ledger-types",
@@ -7345,7 +7392,7 @@ dependencies = [
  "cycles_dispenser_client",
  "getrandom",
  "ic-cdk 0.12.1",
- "ic-cdk-timers",
+ "ic-cdk-timers 0.11.0",
  "itertools",
  "msgpack",
  "rand",
